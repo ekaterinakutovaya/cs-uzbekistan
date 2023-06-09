@@ -6,7 +6,7 @@
   --text-color: #475467;
   --dim-green: #ecfdf3;
   --bg-color: #fff;
-  --section-bg-color: #FCFCFD;
+  --section-bg-color: #fcfcfd;
   --border-color: #eaecf0;
 }
 
@@ -159,6 +159,13 @@ body {
   color: var(--primary-color);
 }
 
+.heading-4 {
+  font-size: 1.33333rem;
+  font-weight: 600;
+  line-height: 1.66666rem;
+  color: var(--primary-color);
+}
+
 .heading-1__bg-image {
   font-size: 3.33333rem;
   font-weight: 600;
@@ -273,6 +280,42 @@ body {
     height: 450px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .img-light {
+    display: none;
+  }
+
+  .img-dark {
+    display: block;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .img-dark {
+    display: none;
+  }
+
+  .img-light {
+    display: block;
+  }
+}
+
+// .image-block.light .img-light {
+//   display: block;
+// }
+
+// .image-block.light .img-dark {
+//   display: none;
+// }
+
+// .image-block.dark .img-dark {
+//   display: block;
+// }
+
+// .image-block.dark .img-light {
+//   display: none;
+// }
 
 .breadcrumb {
   display: flex;
@@ -456,6 +499,28 @@ body {
   }
 }
 
+.image-align.right .promo-block__content {
+  order: 1;
+}
+
+.image-align.left .promo-block__content {
+  order: 2;
+
+  >div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.image-align.right .promo-block__image {
+  order: 2;
+}
+
+.image-align.left .promo-block__image {
+  order: 1;
+}
+
 .bg-gradient_to-right {
   width: 100%;
   height: 100%;
@@ -481,4 +546,32 @@ body {
   right: 0;
   left: 0;
   z-index: 2;
+}
+
+// ******************* Teal-block ************************************************************
+.teal-block {
+  &__inner {}
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--dim-green);
+    color: var(--accent-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      font-size: 1.38888rem;
+    }
+  }
 }
