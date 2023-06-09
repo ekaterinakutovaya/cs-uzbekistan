@@ -1,0 +1,87 @@
+<header class="w-full">
+  <div class="container">
+    <div class="flex items-center justify-between py-[27px]">
+      <a href="/">
+        <svg
+          class="w-[140px] h-[35px] sm:w-[160px] sm:h-[40px] fill-primaryColor dark:fill-darkPrimaryColor"
+        >
+          <use xlink:href="../img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+
+      <div class="hidden sm:flex items-center gap-x-[40px]">
+        <nav class="flex items-center">
+          <ul
+            class="flex items-center gap-x-[40px] text-primaryColor dark:text-darkPrimaryColor"
+          >
+            <li class="cursor-pointer">
+              <a href="#">About Us</a>
+            </li>
+            <li class="cursor-pointer flex items-center">
+              <a href="#"
+                >Vacancies
+                <span class="count-badge">3</span>
+              </a>
+            </li>
+            <li class="cursor-pointer flex items-center gap-x-[9px] relative">
+              Services
+              <div class="caret">
+                <svg>
+                  <use xlink:href="../img/sprite.svg#caret"></use>
+                </svg>
+              </div>
+
+              <!-- Dropdown menu -->
+              <ul class="dropdown-menu">
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+              </ul>
+            </li>
+            <li class="cursor-pointer">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div
+          class="h-[28px] border-solid border-[1px] border-gray200 dark:border-gray100"
+        ></div>
+
+        <div class="flex items-center gap-x-[15px]">
+          <div
+            class="w-[32px] h-[24px] overflow-hidden border-solid border-white dark:border-gray100 border-[3px] box-content shadow-langSwitcherShadow rounded"
+          >
+            <img
+              src="../img/icons/flag-usa.png"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div>
+            English
+          </div>
+
+          <div class="caret">
+            <svg>
+              <use xlink:href="../img/sprite.svg#caret"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Burger-menu -->
+      <button class="burger-menu-btn sm:hidden">
+        <span class="">Menu</span>
+
+        <svg
+          class="w-[18px] h-[24px] fill-primaryColor dark:fill-darkPrimaryColor"
+        >
+          <use xlink:href="../img/sprite.svg#burger"></use>
+        </svg>
+      </button>
+
+     
+    </div>
+  </div>
+</header>
